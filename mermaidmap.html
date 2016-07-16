@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <style>
+    body {
+    	margin: 0;
+    }
+    #map {
+    	/*Image size: 9322x5244, aspect ratio: 1.778;*/
+    	background-color: auto;
+    	position: relative;
+        top:0px;
+        left:0px;
+    	width: 100vw;
+    	height: calc(100vw/1.778);
+        background-image: url("https://files.slack.com/files-pri/T086L74T1-F1QQAU65B/mermaidmapweb.jpg?pub_secret=bfe86b7bf1");
+        background-size: contain;
+        /*background-repeat: no-repeat;*/
+    }
+
+    .mermaid {
+    	/*Size: 2002x3669, aspect ratio: 0.546*/
+        background-size: contain;
+        background-repeat: no-repeat;
+    	position: absolute;
+    	min-width: 1.8vw;
+    	min-height: calc(1.8vw/0.546);
+    	border-radius: 0%;
+    }
+
+    .location {
+    	color: white;
+    	font-size: 0.5em;
+    	position: absolute;
+    }
+
+    #australia .location {
+    	left: 2vw;
+    	top: -.4vw;
+    	font-size: 1.3vw;
+    }
+
+    #mermaidaustralia {
+        background-image: url("https://files.slack.com/files-pri/T086L74T1-F1SCHBL2C/mermaidouterglow.png?pub_secret=a2287a1933");
+            left: 80%;
+            top: 69%;
+    }
+
+    #newzealand .location {
+        left: 4vw;
+        top: -.4vw;
+        font-size: 1.3vw;
+    }
+
+    #mermaidnewzealand {
+        background-image: url("https://files.slack.com/files-pri/T086L74T1-F1SCBJS92/mermaid3outerglownew.png?pub_secret=51dc03e20b");
+            left: 380%;
+            top: 140%;
+    }
+    
+    #canada .location {
+        left: 2.1vw;
+        top: -.2.4vw;
+        font-size: 1.3vw;
+    }
+
+    #mermaidcanada {
+        background-image: url("https://files.slack.com/files-pri/T086L74T1-F1SCBJS92/mermaid3outerglownew.png?pub_secret=51dc03e20b");
+            left: -3900%;
+            top: -900%;
+    }
+    
+    #northamerica .location {
+        left: 2.5vw;
+        top: -1vw;
+        font-size: 1.3vw;
+    }
+
+    #mermaidnorthamerica {
+        background-image: url("https://files.slack.com/files-pri/T086L74T1-F1SCHBL2C/mermaidouterglow.png?pub_secret=a2287a1933");
+            left: -90%;
+            top: 200%;
+    }
+
+    #caribbean .location {
+        left: 2vw;
+        top: -.8vw;
+        font-size: 1.3vw;
+    }
+
+    #mermaidcaribbean {
+        background-image: url("https://files.slack.com/files-pri/T086L74T1-F1SCV7MCH/mermaid2outerglow.png?pub_secret=71647da5b4");
+            left: 465%;
+            top: 162%;
+    }
+
+    #brazil .location {
+        left: 2.2vw;
+        top: -1vw;
+        font-size: 1.3vw;
+    }
+
+    #mermaidbrazil {
+        background-image: url("https://files.slack.com/files-pri/T086L74T1-F1SCHBL2C/mermaidouterglow.png?pub_secret=a2287a1933");
+            left: 210%;
+            top: 200%;
+    }
+
+    #southamerica .location {
+        left: 2.1vw;
+        top: -1vw;
+        font-size: 1.3vw;
+    }
+
+    #mermaidsouthamerica {
+        background-image: url("https://files.slack.com/files-pri/T086L74T1-F1SCV7MCH/mermaid2outerglow.png?pub_secret=71647da5b4");
+            left: -20%;
+            top: 250%;
+    }
+
+    #africa .location {
+        left: 2.1vw;
+        top: -1vw;
+        font-size: 1.3vw;
+    }
+
+    #mermaidafrica {
+        background-image: url("https://files.slack.com/files-pri/T086L74T1-F1SCV7MCH/mermaid2outerglow.png?pub_secret=71647da5b4");
+            left: 1200%;
+            top: -370%;
+    }
+
+    #middleeast .location {
+        left: 2.1vw;
+        top: -1.5vw;
+        font-size: 1.3vw;
+    }
+
+    #mermaidmiddleeast {
+        background-image: url("https://files.slack.com/files-pri/T086L74T1-F1SCBJS92/mermaid3outerglownew.png?pub_secret=51dc03e20b");
+            left: 415%;
+            top: -130%;
+    }
+
+    #england .location {
+        left: 2.1vw;
+        top: -2.8vw;
+        font-size: 1.3vw;
+    }
+
+    #mermaidengland {
+        background-image: url("https://files.slack.com/files-pri/T086L74T1-F1SCBJS92/mermaid3outerglownew.png?pub_secret=51dc03e20b");
+            left: -707%;
+            top: -285%;
+    }
+
+    #europe .location {
+        left: 1.8vw;
+        top: -1.2vw;
+        font-size: 1.3vw;
+    }
+
+    #mermaideurope {
+        background-image: url("https://files.slack.com/files-pri/T086L74T1-F1SCV7MCH/mermaid2outerglow.png?pub_secret=71647da5b4");
+            left: 310%;
+            top: 110%;
+    }
+
+    #russia .location {
+        left: 2vw;
+        top: 0vw;
+        font-size: 1.3vw;
+    }
+
+    #mermaidrussia {
+        background-image: url("https://files.slack.com/files-pri/T086L74T1-F1SCBJS92/mermaid3outerglownew.png?pub_secret=51dc03e20b");
+            left: 950%;
+            top: -150%;
+    }
+
+    #india .location {
+        left: 2vw;
+        top: 0vw;
+        font-size: 1.3vw;
+    }
+
+    #mermaidindia {
+        background-image: url("https://files.slack.com/files-pri/T086L74T1-F1SCHBL2C/mermaidouterglow.png?pub_secret=a2287a1933");
+            left: -65%;
+            top: 360%;
+    }
+
+    #china .location {
+        left: 2vw;
+        top: 0vw;
+        font-size: 1.3vw;
+    }
+
+    #mermaidchina {
+        background-image: url("https://files.slack.com/files-pri/T086L74T1-F1SCV7MCH/mermaid2outerglow.png?pub_secret=71647da5b4");
+            left: 400%;
+            top: -100%;
+    }
+
+    #japan .location {
+        left: 2vw;
+        top: 0vw;
+        font-size: 1.3vw;
+    }
+
+    #mermaidjapan {
+        background-image: url("https://files.slack.com/files-pri/T086L74T1-F1SCHBL2C/mermaidouterglow.png?pub_secret=a2287a1933");
+            left: 445%;
+            top: -80%;
+    }
+
+    #indonesia .location {
+        left: 1.8vw;
+        top: -.5vw;
+        font-size: 1.3vw;
+    }
+
+    #mermaidindonesia {
+        background-image: url("https://files.slack.com/files-pri/T086L74T1-F1SCBJS92/mermaid3outerglownew.png?pub_secret=51dc03e20b");
+            left: -170%;
+            top: 380%;
+    }
+
+    </style>
+</head>
+
+<body>
+	<div id='map'>
+		<a href="australia.html">
+        <div id='mermaidaustralia' class='mermaid'>
+            <div id='australia' class='mermaid'>
+            <div class='location'>Australia</div></div></a>
+ 
+        <a href="newzealand.html">      
+        <div id='mermaidnewzealand' class='mermaid'>
+        <div id='newzealand' class='mermaid'>
+            <div class='location'>New Zealand & Polynesia</div></div></a>
+
+        <a href="canada.html">      
+        <div id='mermaidcanada' class='mermaid'>
+        <div id='canada' class='mermaid'>
+            <div class='location'>Canada</div></div></a>
+
+        <a href="northamerica.html">      
+        <div id='mermaidnorthamerica' class='mermaid'>
+        <div id='northamerica' class='mermaid'>
+            <div class='location'>North America</div></div></a>
+
+        <a href="caribbean.html">      
+        <div id='mermaidcaribbean' class='mermaid'>
+        <div id='caribbean' class='mermaid'>
+            <div class='location'>Caribbean</div></div></a>
+
+        <a href="brazil.html">      
+        <div id='mermaidbrazil' class='mermaid'>
+        <div id='brazil' class='mermaid'>
+            <div class='location'>Brazil</div></div></a>
+
+        <a href="southamerica.html">      
+        <div id='mermaidsouthamerica' class='mermaid'>
+        <div id='southamerica' class='mermaid'>
+            <div class='location'>SouthAmerica</div></div></a>
+
+        <a href="africa.html">      
+        <div id='mermaidafrica' class='mermaid'>
+        <div id='africa' class='mermaid'>
+            <div class='location'>Africa</div></div></a>
+
+        <a href="middleeast.html">      
+        <div id='mermaidmiddleeast' class='mermaid'>
+        <div id='middleeast' class='mermaid'>
+            <div class='location'>Middle East</div></div></a>
+
+        <a href="england.html">      
+        <div id='mermaidengland' class='mermaid'>
+        <div id='england' class='mermaid'>
+            <div class='location'>England & Ireland</div></div></a>
+
+        <a href="europe.html">      
+        <div id='mermaideurope' class='mermaid'>
+        <div id='europe' class='mermaid'>
+            <div class='location'>Europe</div></div></a>
+
+        <a href="russia.html">      
+        <div id='mermaidrussia' class='mermaid'>
+        <div id='russia' class='mermaid'>
+            <div class='location'>Russia</div></div></a>
+
+        <a href="india.html">      
+        <div id='mermaidindia' class='mermaid'>
+        <div id='india' class='mermaid'>
+            <div class='location'>India</div></div></a>
+
+        <a href="china.html">      
+        <div id='mermaidchina' class='mermaid'>
+        <div id='china' class='mermaid'>
+            <div class='location'>China</div></div></a>
+
+        <a href="japan.html">      
+        <div id='mermaidjapan' class='mermaid'>
+        <div id='japan' class='mermaid'>
+            <div class='location'>Japan</div></div></a>
+
+        <a href="indonesia.html">      
+        <div id='mermaidindonesia' class='mermaid'>
+        <div id='indonesia' class='mermaid'>
+            <div class='location'>Indonesia</div></div></a>
+
+	</div>
+    <script>
+    var map = document.querySelector('#map');
+    document.map.addEventListener('mousemove', function(event) {
+    	console.log("x", event.offsetX/map.offsetWidth * 100 + '%');
+    	console.log("y", event.offsetY/map.offsetHeight * 100 + '%');
+    });
+    </script>
+
+</body>
+
+</html>
+ 
