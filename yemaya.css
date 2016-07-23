@@ -1,0 +1,48 @@
+#map {
+		/*Image size: 1650x864, aspect ratio: 1.909;*/
+background-image: url("https://files.slack.com/files-pri/T086L74T1-F1UDZQVA7/map.jpg?pub_secret=2c9932c785");
+  width: 50vw;
+  height: calc(50vw/1.909);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 20vw;
+  top: 6.2vw;
+  z-index: 1;
+}
+
+#bird img{
+		/*Image size: 1650x864, aspect ratio: 1.909;*/
+  width: 10vw;
+  height: calc(12vw/1.909);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 21.7vw;
+  top: 8.2vw;
+  z-index: 2;
+  -webkit-filter: drop-shadow(12px 12px 50px rgba(255, 255, 255, 0.1));
+}
+
+  #bird img:hover {
+  -webkit-filter: drop-shadow(12px 12px 50px rgba(255, 255, 255, 0.5));
+      }
+
+#yemaya img{
+		/*Image size: 1650x864, aspect ratio: 1.909;*/
+  width: 50vw;
+  height: calc(50vw/1.909);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display:flex;
+  position: absolute;
+  left: 20vw;
+  top: 6.2vw;
+  z-index: 2;
+  -webkit-filter: drop-shadow(12px 12px 50px rgba(255, 255, 255, 0.1));
+}
+
+  #yemaya img:hover {
+  -webkit-filter: drop-shadow(12px 12px 50px rgba(255, 255, 255, 0.8));
+      }
+
