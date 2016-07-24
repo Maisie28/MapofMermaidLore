@@ -1,0 +1,305 @@
+#sednabackground {
+		/*Image size: 1650x864, aspect ratio: 1.909;*/
+background-image: url("https://files.slack.com/files-pri/T086L74T1-F1UJH1X09/sednabackground2.jpg?pub_secret=010bd334b0");
+  width: 50vw;
+  height: calc(50vw/1.909);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 25vw;
+  top: 6.2vw;
+  z-index: 1;
+}
+
+#bird1 {
+background-image: url("https://files.slack.com/files-pri/T086L74T1-F1UHQ4VA6/bird1.png?pub_secret=67a316ff8e");
+  width: 16.2vw;
+  height: calc(10.6vw/1.909);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 31.1vw;
+  top: 6.22vw;
+  z-index: 2;
+  -webkit-filter:hue-rotate(180deg);
+	animation-name:colorchange;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+		}
+	@keyframes colorchange
+
+	{ 0% {-webkit-filter:hue-rotate(0deg);}
+	25% {-webkit-filter:hue-rotate(90deg);}
+	50% {-webkit-filter:hue-rotate(180deg);}
+	75% {-webkit-filter:hue-rotate(270deg);}
+	100% {-webkit-filter:hue-rotate(360deg);}
+
+	}
+
+#blackseal2 {
+		/*Image size: 1650x864, aspect ratio: 1.909;*/
+background-image: url("https://files.slack.com/files-pri/T086L74T1-F1UH3C0DA/blackseal2.png?pub_secret=916d243c1f");
+  width: 20vw;
+  height: calc(18vw/1.909);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 27.9vw;
+  top: 15.7vw;
+  z-index: 2;
+  -webkit-filter:hue-rotate(180deg);
+  animation-name:colorchange;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+    }
+  @keyframes colorchange
+
+  { 0% {-webkit-filter:hue-rotate(0deg);}
+  25% {-webkit-filter:hue-rotate(90deg);}
+  50% {-webkit-filter:hue-rotate(180deg);}
+  75% {-webkit-filter:hue-rotate(270deg);}
+  100% {-webkit-filter:hue-rotate(360deg);}
+
+  } 
+
+
+#otter3 {
+		/*Image size: 1650x864, aspect ratio: 1.909;*/
+background-image: url("https://files.slack.com/files-pri/T086L74T1-F1UFSTN03/otter3.png?pub_secret=523d3facec");
+  width: 21vw;
+  height: calc(21vw/1.909);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 27.3vw;
+  top: 21.9vw;
+  z-index: 2;
+  -webkit-filter:hue-rotate(180deg);
+	animation-name:colorchange;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+		}
+	@keyframes colorchange
+
+	{ 0% {-webkit-filter:hue-rotate(0deg);}
+	25% {-webkit-filter:hue-rotate(90deg);}
+	50% {-webkit-filter:hue-rotate(180deg);}
+	75% {-webkit-filter:hue-rotate(270deg);}
+	100% {-webkit-filter:hue-rotate(360deg);}
+
+	}
+
+#brownseal4 {
+		/*Image size: 1650x864, aspect ratio: 1.909;*/
+background-image: url("https://files.slack.com/files-pri/T086L74T1-F1UHK7GKT/brownseal4.png?pub_secret=ea51c3d992");
+  width: 14.5vw;
+  height: calc(14.5vw/1.909);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 32vw;
+  top: 21.9vw;
+  z-index: 2;
+  -webkit-filter:hue-rotate(180deg);
+	animation-name:colorchange;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+		}
+	@keyframes colorchange
+
+	{ 0% {-webkit-filter:hue-rotate(0deg);}
+	25% {-webkit-filter:hue-rotate(90deg);}
+	50% {-webkit-filter:hue-rotate(180deg);}
+	75% {-webkit-filter:hue-rotate(270deg);}
+	100% {-webkit-filter:hue-rotate(360deg);}
+
+	}
+
+		/*Image size: 1650x864, aspect ratio: 1.909;*/
+#narwal5 {
+
+  background-image: url("https://files.slack.com/files-pri/T086L74T1-F1UHQ5B98/narwal5.png?pub_secret=788b37d74d");
+  width: 17.5vw;
+  height: calc(17.8vw/1.909);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 33.71vw;
+  top: 21.3vw;
+  z-index: 3;
+  -webkit-filter:hue-rotate(180deg);
+	animation-name:colorchange;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+		}
+	@keyframes colorchange
+
+	{ 0% {-webkit-filter:hue-rotate(0deg);}
+	25% {-webkit-filter:hue-rotate(90deg);}
+	50% {-webkit-filter:hue-rotate(180deg);}
+	75% {-webkit-filter:hue-rotate(270deg);}
+	100% {-webkit-filter:hue-rotate(360deg);}
+
+	}
+
+#smallseal6 {
+
+  background-image: url("https://files.slack.com/files-pri/T086L74T1-F1UH7E3TJ/smallseal6.png?pub_secret=230fbce2aa");
+  width: 11vw;
+  height: calc(11vw/1.909);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 36vw;
+  top: 20.2vw;
+  z-index: 3;
+  -webkit-filter:hue-rotate(180deg);
+	animation-name:colorchange;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+		}
+	@keyframes colorchange
+
+	{ 0% {-webkit-filter:hue-rotate(0deg);}
+	25% {-webkit-filter:hue-rotate(90deg);}
+	50% {-webkit-filter:hue-rotate(180deg);}
+	75% {-webkit-filter:hue-rotate(270deg);}
+	100% {-webkit-filter:hue-rotate(360deg);}
+
+	}
+
+#brownseal7 {
+
+  background-image: url("https://files.slack.com/files-pri/T086L74T1-F1UH7DR16/brownseal7.png?pub_secret=7500823c4b");
+  width: 8vw;
+  height: calc(8vw/1.909);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 32.2vw;
+  top: 19.8vw;
+  z-index: 2;
+  -webkit-filter:hue-rotate(180deg);
+  animation-name:colorchange;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+    }
+  @keyframes colorchange
+
+  { 0% {-webkit-filter:hue-rotate(0deg);}
+  25% {-webkit-filter:hue-rotate(90deg);}
+  50% {-webkit-filter:hue-rotate(180deg);}
+  75% {-webkit-filter:hue-rotate(270deg);}
+  100% {-webkit-filter:hue-rotate(360deg);}
+
+  }
+
+
+
+#blackandwhitewhale8 {
+
+  background-image: url("https://files.slack.com/files-pri/T086L74T1-F1UHDE0B1/blackandwhitewhale8.png?pub_secret=f748a8ca38");
+  width: 10vw;
+  height: calc(10vw/1.909);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 36vw;
+  top: 17.2vw;
+  z-index: 3;
+  -webkit-filter:hue-rotate(180deg);
+  animation-name:colorchange;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+    }
+  @keyframes colorchange
+
+  { 0% {-webkit-filter:hue-rotate(0deg);}
+  25% {-webkit-filter:hue-rotate(90deg);}
+  50% {-webkit-filter:hue-rotate(180deg);}
+  75% {-webkit-filter:hue-rotate(270deg);}
+  100% {-webkit-filter:hue-rotate(360deg);}
+
+  }
+
+
+#polarbear9 {
+
+  background-image: url("https://files.slack.com/files-pri/T086L74T1-F1UHDEJLX/polarbear9.png?pub_secret=ff17d54ff3");
+  width: 9.2vw;
+  height: calc(9.2vw/1.909);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 40.5vw;
+  top: 21vw;
+  z-index: 2;
+  -webkit-filter:hue-rotate(180deg);
+  animation-name:colorchange;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+    }
+  @keyframes colorchange
+
+  { 0% {-webkit-filter:hue-rotate(0deg);}
+  25% {-webkit-filter:hue-rotate(90deg);}
+  50% {-webkit-filter:hue-rotate(180deg);}
+  75% {-webkit-filter:hue-rotate(270deg);}
+  100% {-webkit-filter:hue-rotate(360deg);}
+
+  }
+
+
+#bluewhale10 {
+
+  background-image: url("https://files.slack.com/files-pri/T086L74T1-F1UH3C676/bluewhale10.png?pub_secret=00bf66a747");
+  width: 13.3vw;
+  height: calc(13vw/1.909);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 42.3vw;
+  top: 12.5vw;
+  z-index: 2;
+  -webkit-filter:hue-rotate(180deg);
+  animation-name:colorchange;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+    }
+  @keyframes colorchange
+
+  { 0% {-webkit-filter:hue-rotate(0deg);}
+  25% {-webkit-filter:hue-rotate(90deg);}
+  50% {-webkit-filter:hue-rotate(180deg);}
+  75% {-webkit-filter:hue-rotate(270deg);}
+  100% {-webkit-filter:hue-rotate(360deg);}
+
+  }
+
+
+#blackseal11 {
+
+  background-image: url("https://files.slack.com/files-pri/T086L74T1-F1UHQ5318/blackseal11.png?pub_secret=871d8dcf3a");
+  width: 17vw;
+  height: calc(17vw/1.909);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 55.5vw;
+  top: 19.2vw;
+  z-index: 2;
+  -webkit-filter:hue-rotate(180deg);
+  animation-name:colorchange;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+    }
+  @keyframes colorchange
+
+  { 0% {-webkit-filter:hue-rotate(0deg);}
+  25% {-webkit-filter:hue-rotate(90deg);}
+  50% {-webkit-filter:hue-rotate(180deg);}
+  75% {-webkit-filter:hue-rotate(270deg);}
+  100% {-webkit-filter:hue-rotate(360deg);}
+
+  }
+
