@@ -1,3 +1,27 @@
+#atargatistwo {
+
+  width:20.3vw;
+  height:25.2vw;
+  background-image:url(atargatistwo.png);
+  background-repeat: no-repeat;
+  position: relative;
+  background-size:cover;
+  animation-name:arms;
+  animation-duration:1s;
+  animation-timing-function: steps(2);
+  animation-iteration-count: infinite;
+  z-index:100;
+  left:9vw;
+  bottom:-1vw;
+}
+  @keyframes arms{
+
+    0% {background-position:0px;}
+    100% {background-position:-425px;}
+/*    100% {background-position: 0px;}*/
+
+  }
+
 #sky {
 		/*Image size: 1650x864, aspect ratio: 1.909;*/
 background-image: url("https://files.slack.com/files-pri/T086L74T1-F1UD8U1CN/sky.png?pub_secret=288222a717");
@@ -42,120 +66,3 @@ background-image: url("https://files.slack.com/files-pri/T086L74T1-F1UBWK10T/gro
   top: 6.2vw;
   z-index: 3;
 }
-
-#atargatisbottom {
-    /*Image size: 1650x864, aspect ratio: 1.909;*/
-  background-image: url("https://files.slack.com/files-pri/T086L74T1-F1UD7JT2Q/atargatispurplehandsdown.png?pub_secret=83d1424c5c");
-  width: 45vw;
-  height: calc(45vw/1.909);
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 20vw;
-  top: 8.7vw;
-  z-index: 4;
-  -webkit-transition: opacity 1s cf3FadeInOut;
-  opacity:1;
-}
-  @keyframes cf3FadeInOut {
- 0% {
-  opacity:1;
-}
-10% {
-opacity:.8;
-}
-20% {
-opacity:.6;
-}
-30% {
-opacity:.4;
-}
-40% {
-opacity:.2;
-}
-50% {
-opacity:0;
-}
-60% {
-opacity:.2;
-}
-70% {
-opacity:.4;
-}
-80% {
-opacity:.6;
-}
-90% {
-opacity:.8;
-}
-100% {
-opacity:1;
-}
-}
-
-#atargatisbottom {
-animation-name: cf3FadeInOut;
-animation-timing-function: ease-in-out;
-animation-iteration-count: infinite;
-animation-duration: 1s;
-animation-direction: alternate;
-}
-
-#atargatistop {
-		/*Image size: 1650x864, aspect ratio: 1.909;*/
-  background-image: url("https://files.slack.com/files-pri/T086L74T1-F1UD9MEG6/atargatispurplehandsup.png?pub_secret=9b6bb059f7");
-  width: 45vw;
-  height: calc(45vw/1.909);
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 20vw;
-  top:8.7vw;
-  z-index: 4;
-  -webkit-transition: opacity 2s cf3FadeInOut;
-  opacity:0;
-}
-  @keyframes cf3FadeInOut {
- 0% {
-  opacity:0;
-}
-10% {
-opacity:.2;
-}
-20% {
-opacity:.4;
-}
-30% {
-opacity:.6;
-}
-40% {
-opacity:.8;
-}
-50% {
-opacity:1;
-}
-60% {
-opacity:.8;
-}
-70% {
-opacity:.6;
-}
-80% {
-opacity:.4;
-}
-90% {
-opacity:.2;
-}
-100% {
-opacity:0;
-}
-}
-
-#atargatistop {
-animation-name: cf3FadeInOut;
-animation-timing-function: ease-in-out;
-animation-iteration-count: infinite;
-animation-duration: 2s;
-animation-direction: alternate;
-}
-
