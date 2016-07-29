@@ -1,0 +1,32 @@
+
+#background {
+		/*Image size: 1650x864, aspect ratio: 1.909;*/
+background-image: url("https://files.slack.com/files-pri/T086L74T1-F1WG61BFV/sharkbackground.jpg?pub_secret=a6811e9ef6");
+  width: 50vw;
+  height: calc(50vw/1.909);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 20vw;
+  top: 6.2vw;
+  z-index: 1;
+}
+
+#mermaidmoana {
+		/*Image size: 1650x864, aspect ratio: 1.909;*/
+background-image: url("https://files.slack.com/files-pri/T086L74T1-F1WJ5T4P7/moanagroup.png?pub_secret=730ecec510");
+  width: 25vw;
+  height: calc(25vw/1.909);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 28vw;
+  top: 12.5vw;
+  z-index: 2;
+  animation: orbit 10s linear infinite;
+}
+
+@keyframes orbit {
+  from {  transform: rotate(0deg) translateX(1px); }
+  to   {  transform: rotate(360deg) translateX(1px); }
+}
