@@ -8,7 +8,7 @@ background-image: url("https://files.slack.com/files-pri/T086L74T1-F1UKZU5M5/nat
   position: absolute;
   left: 20vw;
   top: 6.2vw;
-  z-index: 17;
+  z-index: 15;
 }
 
 
@@ -22,13 +22,13 @@ background-image: url("https://files.slack.com/files-pri/T086L74T1-F1UKZU2DV/lak
   position: absolute;
   left: 20vw;
   top: 6.2vw;
-  z-index: 12;
+  z-index: 1;
   animation: move 2s linear infinite alternate; 
 }
 
 @keyframes move {
-  from { z-index: 12;}
-  to { z-index: 1;}
+  from { z-index: 1;}
+  to { z-index: 12;}
 }
 
 
@@ -43,13 +43,13 @@ background-image: url("https://files.slack.com/files-pri/T086L74T1-F1UKPS9AQ/gra
   position: absolute;
   left: 20vw;
   top: 6.2vw;
-  z-index: 8;
-  animation: move 4s linear infinite alternate; 
+  z-index: 5;
+  animation: move 8s linear infinite alternate; 
 }
 
 @keyframes move {
-  from { z-index: 8;}
-  to { z-index: 1;}
+  from { z-index: 5;}
+  to { z-index: 12;}
 }
 
 
@@ -63,13 +63,13 @@ background-image: url("https://files.slack.com/files-pri/T086L74T1-F1UL5MPND/buf
   position: absolute;
   left: 20vw;
   top: 6.2vw;
-  z-index: 4;
+  z-index: 9;
   animation: move 6s linear infinite alternate; 
 }
 
 @keyframes move {
-  from { z-index: 4;}
-  to { z-index: 10;}
+  from { z-index: 9;}
+  to { z-index: 12;}
 }
 		/*Image size: 1650x864, aspect ratio: 1.909;*/
 #twintailedmermaid {
@@ -83,7 +83,7 @@ background-image: url("https://files.slack.com/files-pri/T086L74T1-F1UL5MPND/buf
   left: 57vw;
   top: 7vw;
   z-index: 15;
-  -webkit-filter: drop-shadow(10px 10px 10px rgba(255, 255, 50, .2));
+
 
   animation: shrink 6s;
   animation-iteration-count: infinite;
