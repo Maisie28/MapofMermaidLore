@@ -63,7 +63,7 @@ background-image: url("https://files.slack.com/files-pri/T086L74T1-F1WNUPL66/boa
   @keyframes arms{
 
     0% {background-position:0px;}
-    100% {background-position:260px;}
+    100% {background-position:280px;}
 /*    100% {background-position: 0px;}*/
 
   }
