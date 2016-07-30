@@ -1,0 +1,69 @@
+#background {
+		/*Image size: 1650x864, aspect ratio: 1.909;*/
+background-image: url("https://files.slack.com/files-pri/T086L74T1-F1WLXK95Z/background.png?pub_secret=6f4c9a283f");
+  width: 50vw;
+  height: calc(50vw/1.909);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 20vw;
+  top: 6.2vw;
+  z-index: 1;
+}
+
+#sirena {
+		/*Image size: 1650x864, aspect ratio: 1.909;*/
+background-image: url("https://files.slack.com/files-pri/T086L74T1-F1WNAFDSS/sirenas.png?pub_secret=203bd19243");
+  width: 50vw;
+  height: calc(50vw/1.909);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 20vw;
+  top: 6.2vw;
+  z-index: 3;
+}
+
+#music {
+		/*Image size: 1650x864, aspect ratio: 1.909;*/
+background-image: url("https://files.slack.com/files-pri/T086L74T1-F1WNJP04D/yellowmusicnotes.png?pub_secret=ab54f00a1e");
+  width: 20vw;
+  height: calc(20vw/1.909);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 32vw;
+  top: 6.2vw;
+  z-index: 4;
+  animation: shrink 5s;
+  animation-iteration-count: infinite;
+  transform: translate3d(25, 25, 25);
+}
+
+@keyframes shrink {
+    from { transform : scale(.1); }
+    to   { transform : scale(1.0); }
+}
+
+#boat {
+		/*Image size: 1650x864, aspect ratio: 1.909;*/
+background-image: url("https://files.slack.com/files-pri/T086L74T1-F1WNUPL66/boatandhearts.png?pub_secret=70b8139a35");
+  width: 20vw;
+  height: calc(20vw/1.909);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 19vw;
+  top: 11.2vw;
+  z-index: 2;
+  animation-name:arms;
+  animation-duration:4s;
+  animation-iteration-count: infinite;
+}
+  @keyframes arms{
+
+    0% {background-position:0px;}
+    100% {background-position:260px;}
+/*    100% {background-position: 0px;}*/
+
+  }
